@@ -1,8 +1,10 @@
 :root {
     --primary-color: #190C4D;
+    --primary-light: #b3a9dd;
     --white-color: #fff;
     --white-bg: #fff;
     --gap: 3rem;
+    --light-gray-color: #eee;
 }
 
 * {
@@ -49,6 +51,10 @@ h6 {
     font-size: 3.5rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 .main-bg {
     background-image: url(../img/main-bg.svg);
     /* background by SVGBackgrounds.com */
@@ -69,4 +75,80 @@ h6 {
 
 .section {
     min-height: 100vh;
+}
+
+.menu {
+    background: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--primary-light);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+
+.menu h1 a {
+    color: inherit;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    margin-bottom: 0;
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    position: rel;
+    transition: all 300ms ease-in-out;
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background: crimson;
+
+}
+
+.menu ul li :hover {
+    background-color: #7060b1;
+    color: var(--white-color);
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute0;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: crimson;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    left: 25%;
+    width: 50%;
+
 }
