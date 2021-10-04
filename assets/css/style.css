@@ -24,3 +24,13 @@
     max-width: 100%;
     height: auto;
 }
+
+.subject-content {
+    max-width: 80rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 130vh;
+    text-align: 64rem
+    ;
+}
