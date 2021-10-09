@@ -14,16 +14,18 @@ rel="stylesheet">
 <link rel="stylesheet" href="./assets/css/menu.css">
 <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body class="main-bg">
+<body>
+    <input type="checkbox" aria-label="Close menu" role="button" id="close-menu" class="close-menu">
+    <label for="close-menu" title="close menu" class="close-menu-label"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
 
             <h1>
-                <a href="#home">Logo</a>
+                <a onclick="getElementById('close-menu').checked = false;" href="#home">Logo</a>
             </h1>
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">about me</a></li>
                     <li><a href="#tec-section">technologies</a></li>
                     <li><a href="#templates">hobies</a></li>
@@ -170,5 +172,6 @@ rel="stylesheet">
     <footer id="footer" class="white-bg footer">
         <p><a rel="nofollow" target="_blank" href="https://beacons.ai/ricardroberg">Feito com <span class="heart">❤</span> por Ricard Roberg</a></p>
     </footer>
+    <a class="back-to-top" href="#home">➤</a>
 </body>
 </html>
