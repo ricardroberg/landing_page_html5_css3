@@ -81,11 +81,12 @@
     max-width: 36rem;
     max-height: 36rem;
     overflow: hidden;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .hobbies-img img {
     transition: all 300ms ease-in-out;
-
 }
 
 .hobbies-img img:hover {
@@ -182,7 +183,7 @@
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    background: var(--white-color);
+    background: var(--primary-light);
     color: ;
     width: 5rem;
     height: 5rem;
@@ -193,6 +194,18 @@
     transform: rotate( -90deg);
     border: 0.1rem solid var(--primary-color);
 }
+
+.hobbie-captionv{
+    float: right;
+    width: 30%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    margin-top: 0;
+    padding: 0.5em;
+  }
 
 @media (max-width: 800px) {
     .intro-content, 
